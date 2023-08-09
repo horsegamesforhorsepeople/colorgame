@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  font-family: Consolas;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+#sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+#sliders p {
+  text-align: center;
+}
+
+#preview {
+  width: 20%;
+  height: 10%;
+  background-color: green;
+}
