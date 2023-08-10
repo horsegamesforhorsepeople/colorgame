@@ -16,6 +16,10 @@ main {
   gap: 1em;
 }
 
+input[type="range"] {
+  min-width: 256px;
+}
+
 #sliders p {
   text-align: center;
 }

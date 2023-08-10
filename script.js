@@ -7,7 +7,7 @@ function generateColor() {
   const red = Math.floor(Math.random() * 255);
   const green = Math.floor(Math.random() * 255);
   const blue = Math.floor(Math.random() * 255);
-  document.querySelector("main").style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+  document.querySelector("body").style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
   //console.log(red, green, blue);
   storedColor = "#FFFFFF";
   inputBox.value = storedColor;
@@ -58,12 +58,12 @@ sliders.forEach(slider => {
 });
 
 const allowedChars = "0123456789ABCDEF".split("");
-document.querySelector("input[type='text']").oninput = function(event) {
+document.querySelector("input[type='text']").oninput = function() {
   let value = inputBox.value;
   inputBox.value = inputBox.value.toUpperCase()
   value = value.toUpperCase();
   // if the length is 0 just put a #
-  if (inputBox.value.length === 0) {
+  if (inputBox.value.length === 0 || inputBox.value.length === 1 && inputBox.value[0] !== "#") {
     inputBox.value = "#";
     value = "#";
   } 
