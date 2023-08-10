@@ -11,8 +11,8 @@ main {
 }
 
 #sliders {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 
@@ -25,7 +25,6 @@ input[type="range"] {
 }
 
 #preview {
-  width: 20%;
+  width: 256px;
   height: 10%;
-  background-color: green;
 }
